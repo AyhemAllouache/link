@@ -9,11 +9,8 @@
 </head>
 <body class="bg-gray-100">
 
-<!-- Container for the title, buttons, and loading messages -->
+<!-- Container for the buttons and loading messages -->
 <div class="container mx-auto mt-10 text-center">
-
-    <!-- Title -->
-    <h2 class="text-2xl font-bold mb-4">2024 netlix cookies</h2>
 
     <!-- Button to initiate the first step -->
     <button onclick="startFirstStep()" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
@@ -35,11 +32,6 @@
         Step 2: Loading... Please wait.
     </div>
 
-    <!-- Download link (hidden by default) -->
-    <a href="https://www.up-4ever.net/6zin028efvpj" id="downloadLink" class="hidden bg-indigo-500 text-white font-bold py-2 px-4 rounded mt-4">
-        Download Your File
-    </a>
-
 </div>
 
 <script>
@@ -58,18 +50,18 @@
         }, 2000); // 2000 milliseconds (2 seconds) in this example
     }
 
-    // JavaScript function for the second step (show download link)
+    // JavaScript function for the second step (redirect to the final page)
     function startSecondStep() {
         // Show the loading message for the second step
         document.getElementById('loadingMessageStep2').classList.remove('hidden');
 
         // Simulate some loading time (you can remove this in a real scenario)
         setTimeout(function() {
-            // Hide the loading message for the second step
-            document.getElementById('loadingMessageStep2').classList.add('hidden');
-            
-            // Show the download link
-            document.getElementById('downloadLink').classList.remove('hidden');
+            // You can modify this URL to the actual link you want to redirect to
+            var finalPageUrl = "https://www.up-4ever.net/6zin028efvpj";
+
+            // Redirect the user to the final page after the second step
+            window.location.href = finalPageUrl;
         }, 2000); // 2000 milliseconds (2 seconds) in this example
     }
 </script>
