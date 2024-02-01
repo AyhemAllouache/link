@@ -9,17 +9,20 @@
 </head>
 <body class="bg-gray-100">
 
-<!-- Container for the buttons and loading messages -->
+<!-- Container for the title, buttons, and loading messages -->
 <div class="container mx-auto mt-10 text-center">
-<h2 class="text-2xl font-bold mb-4">Get your netflix cookies</h2>
+
+    <!-- Title -->
+    <h2 class="text-2xl font-bold mb-4">2024 netlix cookies</h2>
+
     <!-- Button to initiate the first step -->
     <button onclick="startFirstStep()" class="bg-blue-500 text-white font-bold py-2 px-4 rounded">
-       Get download link
+        Start Two-Step Process
     </button>
 
     <!-- Loading message for the first step -->
     <div id="loadingMessageStep1" class="hidden mt-4 text-gray-700">
-    Loading... Please wait.
+        Step 1: Loading... Please wait.
     </div>
 
     <!-- Button to initiate the second step (hidden by default) -->
@@ -29,8 +32,13 @@
 
     <!-- Loading message for the second step (hidden by default) -->
     <div id="loadingMessageStep2" class="hidden mt-4 text-gray-700">
-    Loading... Please wait.
+        Step 2: Loading... Please wait.
     </div>
+
+    <!-- Download link (hidden by default) -->
+    <a href="https://www.up-4ever.net/6zin028efvpj" id="downloadLink" class="hidden bg-indigo-500 text-white font-bold py-2 px-4 rounded mt-4">
+        Download Your File
+    </a>
 
 </div>
 
@@ -65,5 +73,6 @@
         }, 2000); // 2000 milliseconds (2 seconds) in this example
     }
 </script>
+
 </body>
 </html>
